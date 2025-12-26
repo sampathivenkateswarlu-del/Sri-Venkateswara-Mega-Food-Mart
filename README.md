@@ -48,7 +48,7 @@ Static Website Development
 Use Case:
 Portfolio Project
 Small Business Website Prototype
-Front-End Practice Project
+Front-End Project
 
 Author:
 Sampathi Venkateswarlu
