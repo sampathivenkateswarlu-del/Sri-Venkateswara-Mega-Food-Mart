@@ -1,0 +1,1164 @@
+/* ------------------------------------
+   NAVBAR STYLING
+------------------------------------- */
+.navbar {
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(255, 254, 254, 0.884);
+    background: #1de203 !important;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand small {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: -3px;
+}
+
+/* NAV LINKS */
+.nav-link {
+    font-size: 1rem;
+    margin-right: 18px;
+    font-weight: 500;
+    color: #fff !important;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #000000 !important;
+}
+
+/* ------------------------------------
+   MOBILE STYLING
+------------------------------------- */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+    filter: brightness(0);
+}
+
+/* Smooth toggle animation */
+.navbar-collapse {
+    transition: all 0.4s ease;
+}
+
+/* Mobile dropdown background */
+@media (max-width: 991px) {
+
+    .nav-link {
+        padding: 10px 0;
+        margin-right: 0;
+        font-size: 1.1rem;
+    }
+
+}
+
+/* ------------------section 1 close -----------------------*/
+
+/* ================= HERO SECTION ================= */
+.hero-section {
+    background: #f5fff4;
+    padding: 120px 0 100px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #1e4620;
+}
+
+.hero-title span {
+    color: #2b8a3e;
+}
+
+.hero-subtitle {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 450px;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 25px;
+    background: #2b8a3e;
+    color: #fff;
+    padding: 10px 26px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    background: #256f34;
+}
+
+/* HERO IMAGE */
+.hero-img {
+    max-width: 420px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 767px) {
+    .hero-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        text-align: center;
+        margin: auto;
+    }
+
+    .hero-btn {
+        display: block;
+        margin: 25px auto 0;
+    }
+
+    .hero-img {
+        max-width: 80%;
+    }
+}
+/* ====================section 1 end =============================*/
+
+/* ===================== SV HERO SLIDER ===================== */
+/* Container */
+.sv-hero-section { width:100%; }
+
+/* Carousel area: uses min-height so mobile doesn't crop too much */
+.sv-hero-carousel { position: relative; }
+
+/* Each slide background */
+.sv-slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 60vh;           /* mobile baseline */
+  height: 85vh;               /* desktop baseline */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Dark overlay for contrast */
+.sv-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%);
+  z-index: 1;
+}
+
+/* Wrapper that contains text and keeps spacing from top */
+.sv-hero-wrap {
+  position: relative;
+  z-index: 2;
+  padding-top: 6rem;        /* space under fixed header */
+  padding-bottom: 3rem;
+}
+
+/* Content box: left aligned on large screens, centered on small */
+.sv-hero-content { max-width: 650px; margin: 0 auto; }
+
+/* Title */
+.sv-hero-title {
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  font-size: 2.6rem;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+/* Emphasised span */
+.sv-hero-title span { color: #cfead1; }
+
+/* Subtitle */
+.sv-hero-sub {
+  color: rgba(255,255,255,0.92);
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.35);
+}
+
+/* CTAs wrapper so buttons can stack on small screens */
+.sv-hero-ctas { 
+color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  font-size: 2.6rem;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  
+
+/* Buttons */
+.sv-btn {
+  border-radius: .55rem;
+  padding: .6rem 1.25rem;
+  font-weight: 600;
+  min-width: 140px;
+  text-align: center;
+}
+
+/* Primary (light) button on dark bg */
+.sv-btn--light {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+}
+.sv-btn--light:hover { background:#f2f2f2; transform: translateY(-2px); }
+
+/* Outline variant */
+.sv-btn--light {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.85);
+}
+.sv-btn--light:hover { background: rgba(255,255,255,0.08); color:#09e2f1; transform: translateY(-2px); }
+
+/* Carousel controls visibility & white arrows */
+.sv-control .carousel-control-prev-icon,
+.sv-control .carousel-control-next-icon {
+  filter: invert(1);
+  width: 42px;
+  height: 42px;
+  background-size: 42px 42px;
+}
+
+/* indicators style */
+.sv-indicators [data-bs-target] {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.45);
+  border: none;
+  margin: 0 .25rem;
+}
+.sv-indicators .active { background: #ffffff; }
+
+/* small tweak so arrows don't block content on small screens */
+@media (max-width: 768px) {
+  .sv-control { width: 6%; }
+}
+}
+/* ===================== RESPONSIVE ADJUSTMENTS ===================== */
+
+/* Large tablets / small laptops */
+@media (max-width: 992px) {
+  .sv-hero-wrap { padding-top: 5rem; padding-bottom: 2.5rem; }
+  .sv-hero-title { font-size: 2.2rem; }
+  .sv-hero-sub { font-size: 1rem; }
+  .sv-slide { height: 70vh; }
+}
+
+/* Small tablets / big phones */
+@media (max-width: 768px) {
+  .sv-hero-wrap { padding-top: 4.5rem; }
+  .sv-hero-title { font-size: 1.85rem; text-align: center; }
+  .sv-hero-sub { text-align: center; font-size: .98rem; }
+  .sv-hero-ctas { justify-content: center; }
+  .sv-slide { height: 65vh; min-height: 50vh; }
+}
+
+/* Phones */
+@media (max-width: 576px) {
+  .sv-hero-wrap { padding-top: 3.8rem; padding-bottom: 2rem; }
+  .sv-hero-title { font-size: 1.5rem; padding: 0 1rem; }
+  .sv-hero-sub { font-size: .9rem; padding: 0 1rem; }
+  .sv-btn { min-width: 100%; max-width: 320px; }
+  .sv-slide { height: 55vh; min-height: 44vh; }
+}
+
+/* Extra small very narrow screens */
+@media (max-width: 400px) {
+  .sv-hero-title { font-size: 1.35rem; }
+  .sv-hero-sub { font-size: .85rem; }
+  .sv-btn { padding: .5rem 1rem; font-size: .92rem; }
+  .sv-slide { height: 48vh; min-height: 40vh; }
+}
+
+/* ------------------------section 2 end ---------------------------------------
+
+/* ---------------   about section   --------------*/
+
+/* ABOUT SECTION STYLING */
+.about-section {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.section41-title {
+   padding-top: 30px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.section41-subtitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #010c4e;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #000;
+}
+
+.highlight-title {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.about-list {
+    padding-left: 18px;
+}
+
+.about-list li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #000;
+}
+
+/* IMAGE */
+.about-img {
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .section41-title {
+        text-align: center;
+    }
+    .section41-subtitle {
+        text-align: center;
+    }
+    .about-text {
+        text-align: center;
+    }
+    .highlight-title {
+        text-align: center;
+    }
+    .about-list {
+        text-align: left;
+        margin-left: 30px;
+    }
+}
+
+/* TOGGLER WHITE ICON */
+.custom-toggler .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+.myexploremenu{
+    position: relative;
+    animation: move 5s infinite ;
+}
+
+@keyframes move {
+  0% { left: 0; }
+  50% { left: 150px; }
+  100% { left: 0; }
+}
+
+/* ------------------   menu section  --------------*/
+
+/* ==================== MENU SECTION ==================== */
+
+/* Section Title */
+.sectiona1-title {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.sectiona1-subtitle {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+/* Menu Card */
+.menu-carda1 {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    transition: 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-carda1:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-color: transparent;
+}
+
+/* Image Wrapper (fixed size) */
+.menu-img-wrappera1 {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.menu-img-wrappera1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Card Text */
+.menu-carda1 h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.menu-carda1 p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 576px) {
+    .menu-img-wrappera1 {
+        height: 160px;
+    }
+}
+
+/* -------------     groceries       section start      ------------------  */
+
+
+/* GROCERIES SECTION */
+.groceries-section {
+    background: #f8f9fa;
+}
+
+.section-title {
+  padding-top: 30px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 16px;
+}
+
+/* GROCERY CARDS */
+.grocery-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.grocery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* Card Image (Perfect fixed size) */
+.grocery-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Heading */
+.grocery-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* List inside cards */
+.grocery-card ul {
+    padding-left: 18px;
+}
+
+.grocery-card ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .grocery-card img {
+        height: 160px;
+    }
+}
+
+
+/* GROCERIES SECTION */
+.grocerie2-section {
+    background: #f8f9fa;
+}
+
+.section2-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section2-subtitle {
+    color: #666;
+    font-size: 16px;
+}
+
+/* GROCERY CARDS */
+.grocery2-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.grocery2-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* Card Image (Perfect fixed size) */
+.grocery2-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Heading */
+.grocery2-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* List inside cards */
+.grocery2-card ul {
+    padding-left: 18px;
+}
+
+.grocery2-card ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .grocery2-card img {
+        height: 160px;
+    }
+}
+
+/* GROCERIES SECTION */
+.grocerie3-section {
+    background: #f8f9fa;
+}
+
+.section3-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section3-subtitle {
+    color: #666;
+    font-size: 16px;
+}
+
+/* GROCERY CARDS */
+.grocery3-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.grocery3-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* Card Image (Perfect fixed size) */
+.grocery3-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Heading */
+.grocery3-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* List inside cards */
+.grocery3-card ul {
+    padding-left: 18px;
+}
+
+.grocery3-card ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .grocery2-card img {
+        height: 160px;
+    }
+}
+
+/* -------------     fruits and dryfruits       section start      ------------------  */
+
+
+/* fruits SECTION */
+.groceries11-section {
+    background: #f8f9fa;
+}
+
+.section11-title {
+   padding-top: 30px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section11-subtitle {
+    color: #666;
+    font-size: 16px;
+}
+
+/* GROCERY CARDS */
+.grocery11-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.grocery11-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* Card Image (Perfect fixed size) */
+.grocery11-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Heading */
+.grocery11-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* List inside cards */
+.grocery11-card ul {
+    padding-left: 18px;
+}
+
+.grocery11-card ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .grocery11-card img {
+        height: 160px;
+    }
+}
+
+
+/* DRYfruits SECTION */
+.groceries12-section {
+    background: #f8f9fa;
+}
+
+.section12-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section12-subtitle {
+    color: #666;
+    font-size: 16px;
+}
+
+/* GROCERY CARDS */
+.grocery12-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.grocery12-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* Card Image (Perfect fixed size) */
+.grocery12-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Heading */
+.grocery12-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* List inside cards */
+.grocery12-card ul {
+    padding-left: 18px;
+}
+
+.grocery12-card ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .grocery12-card img {
+        height: 160px;
+    }
+}
+
+
+/* -------------     ice-creams     section start      ------------------  */
+
+
+/* ice-creams SECTION */
+.groceries21-section {
+    background: #f8f9fa;
+}
+
+.section21-title {
+   padding-top: 30px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section21-subtitle {
+    color: #666;
+    font-size: 16px;
+}
+
+/* GROCERY CARDS */
+.grocery21-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.grocery21-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* Card Image (Perfect fixed size) */
+.grocery21-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Heading */
+.grocery21-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* List inside cards */
+.grocery21-card ul {
+    padding-left: 18px;
+}
+
+.grocery21-card ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .grocery21-card img {
+        height: 160px;
+    }
+}
+
+
+/* -------------     juices and milkshakes     section start      ------------------  */
+
+
+/* juices SECTION */
+.groceries31-section {
+    background: #f8f9fa;
+}
+
+.section31-title {
+   padding-top: 30px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section31-subtitle {
+    color: #666;
+    font-size: 16px;
+}
+
+/* GROCERY CARDS */
+.grocery31-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.grocery31-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* Card Image (Perfect fixed size) */
+.grocery31-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Heading */
+.grocery31-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* List inside cards */
+.grocery31-card ul {
+    padding-left: 18px;
+}
+
+.grocery31-card ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .grocery31-card img {
+        height: 160px;
+    }
+}
+
+
+/*  -------------------    contact  section  ----------------------  */
+
+
+/* Section Title */
+.contact-title {
+  padding-top: 50px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.contact-subtitle {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Left Side Contact Info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-box {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    padding: 15px 10px;
+    border-left: 4px solid #0d6efd;
+    transition: 0.4s ease;
+}
+
+.info-box i {
+    font-size: 32px;
+    color: #0d6efd;
+    transition: 0.3s;
+}
+
+.info-box h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info-box p {
+    margin: 5px 0 0;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Hover Animation */
+.info-box:hover {
+    transform: translateX(8px);
+}
+
+.info-box:hover i {
+    color: #084298;
+    transform: scale(1.1);
+}
+
+/* Right Side Contact Form */
+.contact-form-box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Form Button */
+.submit-btn {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .info-box i {
+        font-size: 26px;
+    }
+    .contact-title {
+        font-size: 26px;
+    }
+    .contact-form-box {
+        padding: 20px;
+    }
+}
+
+
+/* -----------------  to observe this -----------------  */
+
+
+/* Remove full-page horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Any element accidentally going outside screen */
+* {
+    box-sizing: border-box;
+}
+
+/* Prevent containers from stretching too wide */
+.container, .container-fluid {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Make all images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/*      ===========        footer section  =================  */
+.footer-section {
+    background: #000; 
+    color: #fff;
+}
+
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- MOBILE RESPONSIVE FIXES ---------- */
+@media (max-width: 768px) {
+
+    /* Center text on small screen */
+    .footer-section h3,
+    .footer-section h5,
+    .footer-section h6,
+    .footer-section p,
+    .footer-section ul {
+        text-align: center !important;
+    }
+
+    /* Reduce spacing */
+    .footer-section h3 {
+        font-size: 1.4rem;
+    }
+
+    .footer-section h5 {
+        font-size: 1rem;
+    }
+
+    .footer-section h6 {
+        font-size: 1rem;
+    }
+
+    .footer-links li {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ICON + TEXT IN ONE LINE */
+.footer-section .footer-links li {
+    display: flex;
+    align-items: center;
+    justify-content: center;      /* Center in small screens */
+    gap: 8px;
+    white-space: nowrap;
+    margin-bottom: 8px;
+}
+
+.footer-section .footer-links li i {
+    font-size: 1.1rem;
+    min-width: 20px;
+}
+
+/* MOBILE VIEW FIX */
+@media (max-width: 768px) {
+
+    /* Center entire contact text */
+    .footer-section .footer-links li {
+        white-space: normal;      /* Allow wrap only when needed */
+        text-align: center;
+        justify-content: center;  /* Keep icon+text centered */
+    }
+
+    .footer-section h6 {
+        text-align: center !important;
+    }
+
+    .footer-section p {
+        text-align: center;
+    }
+}
+/*  --------------  Footer last section --------------   */
+
+.mydeveloped {
+    text-align: center;
+    font-size: 16px;
+    color: #ccc;
+    padding: 15px 10px;
+    line-height: 1.6;
+}
+
+.mydeveloped-name {
+    font-weight: 600;
+    color: #ffffff;
+    display: inline-block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .mydeveloped {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    .mydeveloped-name {
+        display: block;   /* name goes to next line on small screens */
+        margin-top: 4px;
+    }
+}
